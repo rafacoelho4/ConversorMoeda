@@ -1,6 +1,7 @@
 import 'package:conversor_moeda/constants.dart';
 import 'package:conversor_moeda/screens/loaded_page.dart';
 import 'package:conversor_moeda/screens/loading_page.dart';
+import 'package:conversor_moeda/screens/not_found_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
@@ -12,9 +13,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('\$ Conversor \$'),
+        title: Text('\$ Conversor em tempo real \$'),
         centerTitle: true,
         backgroundColor: kPrimaryColor,
+        elevation: 0,
       ),
       body: MyMainPage(),
     );
@@ -35,13 +37,13 @@ class _MyMainPageState extends State<MyMainPage> {
       builder: (context, snapshot) {
         switch (snapshot.connectionState) {
           case ConnectionState.none:
-            return Text('none');
+            return NotFoundPage();
             break;
           case ConnectionState.waiting:
             return LoadingPage();
             break;
           case ConnectionState.active:
-            return Text('active');
+            return LoadingPage();
             break;
           case ConnectionState.done:
             dolar = snapshot.data["results"]["currencies"]["USD"]["buy"];

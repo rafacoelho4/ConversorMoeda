@@ -1,12 +1,7 @@
 import 'package:conversor_moeda/constants.dart';
 import 'package:flutter/material.dart';
 
-class LoadingPage extends StatefulWidget {
-  @override
-  _LoadingPageState createState() => _LoadingPageState();
-}
-
-class _LoadingPageState extends State<LoadingPage> {
+class NotFoundPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -29,12 +24,19 @@ class _LoadingPageState extends State<LoadingPage> {
           //   size: 110.0,
           // ),
           Divider(),
+          Text(
+            'Erro ao carregar aplicação',
+            style: TextStyle(
+                color: Colors.amber,
+                fontWeight: FontWeight.bold,
+                fontSize: 22.0),
+          ),
           Container(
               width: double.infinity,
               height: 200.0,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                image: AssetImage('assets/images/loading_.png'),
+                image: AssetImage('assets/images/404_not_found.png'),
               ))),
         ],
       ),

@@ -68,15 +68,22 @@ class _LoadedPageState extends State<LoadedPage> {
             gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
-                colors: [kTextLightColor, kBackgroundColor])),
+                colors: [Colors.grey[800], kBackgroundColor])),
         child: Column(
           children: <Widget>[
             Divider(),
-            Icon(
-              Icons.monetization_on,
-              color: kPrimaryColor,
-              size: 110.0,
-            ),
+            // Icon(
+            //   Icons.monetization_on,
+            //   color: kPrimaryColor,
+            //   size: 110.0,
+            // ),
+            Container(
+                width: double.infinity,
+                height: 200.0,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  image: AssetImage('assets/images/money_jar.png'),
+                ))),
             Divider(),
             Form(
               key: _formKey,
