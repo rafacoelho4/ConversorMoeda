@@ -1,18 +1,33 @@
-# ConversorMoeda
+# Conversor de Moedas
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-estados_do_design">Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação">Instalação</a>
 </p>
 
-<p align="center">
-  <img src="conversor_moeda/loaded_page.png" alt="Loaded Page" > 
-</p>
-
 ## 📱 Projeto
 
-Através desse aplicativo podemos calcular conversões de dinheiro entre as moedas _Real_, _Dólar_ e _Euro_. Os valores utilizados no cálculo são retirados da web de formq que estão sempre atualizados.
+Através desse aplicativo podemos calcular conversões de dinheiro entre as moedas R$ _Real_, $ _Dólar_ e € _Euro_.<br />
+Os valores utilizados no cálculo são retirados da web de formq que estão sempre atualizados.
+
+<p align="center">
+  <img src="conversor_moeda/loaded_page.png" alt="Loaded Page" >
+</p>
+
+## 🖌 Estados do design
+
+Venho estudando design para aplicar nas minhas aplicações Web e Mobile.<br />Um ponto muito importante que muitas pessoas se esquecem é sobre os Estados de Design.
+Como deverá ser apresentado a tela ou componente se o mesmo estiver carregando? E se o que o usuário procurava não for encontrado? 
+Devemos nos preocupar com a experiência do usuário durante todo o desenvolvimento do projeto.
+<br /><br />
+Abaixo estão as telas _Carregando_ e _404 Não encontrado_ do projeto.
+
+<p align="center">
+  <img src="conversor_moeda/loading_page.png" alt="Loading state" >
+  <img src="conversor_moeda/not_found_page.png" alt="404 Not Found Page" >
+</p>
 
 ## 🚀 Tecnologias
 
